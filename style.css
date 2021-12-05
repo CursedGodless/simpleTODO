@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  bottom: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 900;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.form__input {
+  height: 35px;
+  margin-bottom: 9px;
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.form__btn {
+  width: 50%;
+  margin: 0 auto;
+  height: 35px;
+  background: rgb(17, 236, 47);
+  border: none;
+  transition: .5s all;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.form__btn:hover, .filter__btn:hover, .task__btn:hover {
+  box-shadow: 2px 3px 9px 0px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 55px;
+
+  padding: 0 10px;
+}
+
+.task__title {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.task__description {
+  margin-top: 9px;
+  font-weight: 500;
+}
+
+.task__wrapper {
+  display: grid;
+  row-gap: 15px;
+  padding: 5px;
+
+}
+
+.task__item {
+  position: relative;
+  padding: 10px 10px 15px 10px;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+.task__btns {
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  gap: 15px;
+  justify-content: end;
+  margin-top: 15px;
+}
+.task__btn {
+  border-radius: 5px;
+  border: none;
+  height: 23px;
+  transition: .5s all;
+  cursor: pointer;
+}
+
+
+.filter__container {
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: minmax(300px, 300px);
+  justify-content: center;
+  gap: 15px;
+}
+
+.filter__btn {
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: .5s all;
+  border-radius: 5px;
+}
+
+.completed {
+  background-color: rgba(9, 230, 101, .7);
+}
+
+.timer {
+  position: absolute;
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  top: 150px;
+  left: 75px;
+}
+
+.timer__item {
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 5px;
+  max-width: 100px;
+  text-align: center;
+}

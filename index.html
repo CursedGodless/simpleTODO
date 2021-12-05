@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="timer">
+    <div class="timer__item-wrapper">
+      <div class="timer__descr">Месяц</div>
+      <div class="timer__item timer__month">
+      </div>
+    </div>
+    <div class="timer__item-wrapper">
+      <div class="timer__descr">День</div>
+      <div class="timer__item timer__day">
+      </div>
+    </div>
+    <div class="timer__item-wrapper">
+      <div class="timer__descr">Часы</div>
+      <div class="timer__item timer__hour">
+      </div>
+    </div>
+    <div class="timer__item-wrapper">
+      <div class="timer__descr">Минуты</div>
+      <div class="timer__item timer__minute">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1 class="title">TODO</h1>
+    <form class="form">
+      <input type="text" class="form__input form__input-title" placeholder="Task title">
+      <input type="text" class="form__input form__input-description" placeholder="Task description">
+      <button type="submit" class="form__btn">Add</button>
+    </form>
+    <div class="filter__container">
+      <button class="filter__btn filter_all">Все задачи</button>
+      <button class="filter__btn filter_uncompleted">Не завершенные</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="task__wrapper">
+
+    </div>
+  </div>
+  </div>
+  <div class="test"></div>
+  <script defer src="script.js"></script>
+</body>
+
+</html>
